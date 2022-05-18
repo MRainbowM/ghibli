@@ -40,9 +40,6 @@
 
     @include max-screen($mixin-phone-max-width) {
         padding-right: 20px;
-    }
-
-    @include max-screen($mixin-phone-max-width) {
         padding-right: 0;
         width: 100%;
         max-width: 450px;
