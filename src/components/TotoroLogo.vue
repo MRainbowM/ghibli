@@ -1,4 +1,5 @@
 <template>
+    <a name="totoro"></a>
     <div class="totoro">
         <div class="totoro_text">
             <h2>Тоторо</h2>
@@ -20,15 +21,15 @@
 .totoro {
     display: flex;
     width: 100%;
-    padding: 0 100px 100px 100px;
+    padding: 100px 100px 0 100px;
     align-items: center;
 
     @include max-screen($mixin-tablet-max-width) {
-        padding: 0 50px 50px 50px;
+        padding: 50px 50px 0 50px;
     }
 
     @include max-screen($mixin-phone-max-width) {
-        padding: 0 20px 20px 20px;
+        padding: 30px 20px 0 20px;
         flex-direction: column-reverse;
     }
 }

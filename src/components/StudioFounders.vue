@@ -1,4 +1,5 @@
 <template>
+    <a name="founders"></a>
     <div class="founders">
         <h2>Основатели студии</h2>
         <div class="founders_row">
@@ -33,14 +34,14 @@
 <style lang="scss" scoped>
 .founders {
     width: 100%;
-    padding: 0 100px 100px 100px;
+    padding: 100px 100px 0 100px;
 
     @include max-screen($mixin-tablet-max-width) {
-        padding: 0 50px 50px 50px;
+        padding: 50px 50px 0 50px;
     }
 
     @include max-screen($mixin-phone-max-width) {
-        padding: 0 20px 20px 20px;
+        padding: 20px 20px 0 20px;
     }
 }
 

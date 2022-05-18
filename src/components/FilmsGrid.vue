@@ -1,4 +1,5 @@
 <template>
+    <a name="films"></a>
     <div class="films">
         <h2>Фильмы студии</h2>
         <div class="films_grid">
@@ -24,16 +25,12 @@ export default {
     async created() {
         try {
             const res = await fetch(filmURL);
-            // console.log(res)
+
             if (!res.ok) {
                 const message = `An error has occured: ${res.status} - ${res.statusText}`;
                 throw new Error(message);
             }
-            const data = await res.json();
-            console.log(data)
-            this.films = data;
-
-            console.log(this.films[0])
+            this.films = await res.json();
         } catch (err) {
             this.films = err.message;
         }
@@ -44,14 +41,14 @@ export default {
 <style lang="scss" scoped>
 .films {
     width: 100%;
-    padding: 0 100px 100px 80px;
+    padding: 100px 100px 0 80px;
 
     @include max-screen($mixin-tablet-max-width) {
-        padding: 0 50px 50px 30px;
+        padding: 50px 50px 0 30px;
     }
 
     @include max-screen($mixin-phone-max-width) {
-        padding: 0 20px 20px 0;
+        padding: 20px 20px 0 0;
     }
 }
 
@@ -82,6 +79,7 @@ export default {
     overflow: hidden;
     position: relative;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .films_grid_item_img img {

@@ -1,25 +1,25 @@
 <template>
   <header class="header">
     <div class="logo">
-      <img src="@/assets/img/logo.png" alt="">
+      <a href="#ghibli">
+        <img src="@/assets/img/logo.png" alt="">
+      </a>
     </div>
     <div class="menu_burger" v-on:click="clickBurger">
       <svg>
         <use href="@/assets/img/icons.svg#i-menu"></use>
       </svg>
     </div>
-    <div class="menu">
-      <span class="menu_item">основатели</span>
-      <span class="menu_item">тоторо</span>
-      <span class="menu_item">фильмы</span>
-      <span class="menu_item">отзыв</span>
+    <div class="menu hide">
+      <a href="#founders" class="menu_item">основатели</a>
+      <a href="#totoro" class="menu_item">тоторо</a>
+      <a href="#films" class="menu_item">фильмы</a>
+      <a href="#films" class="menu_item">отзыв</a>
     </div>
   </header>
 </template>
 
-
 <script>
-
 export default {
   name: "SiteHeader",
   methods: {
@@ -30,17 +30,15 @@ export default {
       if (isHide) {
         menu.classList.remove('hide')
         menu.classList.add('show')
-        burger.classList.add('show-menu')
+        burger.classList.add('show_menu')
       } else {
         menu.classList.remove('show')
         menu.classList.add('hide')
-        burger.classList.remove('show-menu')
+        burger.classList.remove('show_menu')
       }
     }
   }
 }
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -96,7 +94,6 @@ export default {
 }
 
 .menu.show {
-
   @include max-screen($mixin-tablet-max-width) {
     opacity: 1;
     visibility: visible;
@@ -123,6 +120,9 @@ export default {
   color: white;
   transform: scale(0);
 
+  &:hover {
+    color: $hover-color;
+  }
 
 
   @include max-screen($mixin-tablet-max-width) {
@@ -130,11 +130,9 @@ export default {
   }
 }
 
-.menu_burger .show-menu svg {
-  color: #f2c879;
+.menu_burger.show_menu svg {
+  color: $hover-color;
 }
-
-
 
 .menu_item {
   display: flex;
@@ -143,6 +141,10 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+
+  &:hover {
+    color: $hover-color;
+  }
 
   @include max-screen($mixin-tablet-max-width) {
     font-size: 32px;

@@ -1,4 +1,5 @@
 <template>
+    <a name="ghibli"></a>
     <div class="ghibli">
         <div class="ghibli_img">
             <div class="ghibli_img_container">
@@ -20,15 +21,15 @@
 .ghibli {
     display: flex;
     width: 100%;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
     align-items: center;
 
     @include max-screen($mixin-tablet-max-width) {
-        padding: 50px;
+        padding: 50px 50px 0 50px;
     }
 
     @include max-screen($mixin-phone-max-width) {
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         flex-direction: column;
         justify-content: center;
     }
@@ -90,10 +91,7 @@ h1 {
     @include max-screen($mixin-tablet-max-width) {
         font-size: 32px
     }
-
-
 }
-
 
 .ghibli_text_description {
     text-align: center;
