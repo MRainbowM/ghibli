@@ -6,8 +6,11 @@ module.exports = defineConfig({
     loaderOptions: {
       scss: {
         additionalData: '@import "@/assets/styles.sass";'
-        // prependData: '@import "@/assets/styles.sass";'
       }
     }
-  }
+  },
+
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/ghibli/'
+    : '/'
 })
