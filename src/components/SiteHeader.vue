@@ -11,10 +11,10 @@
       </svg>
     </div>
     <div class="menu hide">
-      <a href="#founders" class="menu_item">основатели</a>
-      <a href="#totoro" class="menu_item">тоторо</a>
-      <a href="#films" class="menu_item">фильмы</a>
-      <a href="#review" class="menu_item">отзыв</a>
+      <a href="#founders" v-on:click="clickBurger" class="menu_item">основатели</a>
+      <a href="#totoro" v-on:click="clickBurger" class="menu_item">тоторо</a>
+      <a href="#films" v-on:click="clickBurger" class="menu_item">фильмы</a>
+      <a href="#review" v-on:click="clickBurger" class="menu_item">отзыв</a>
     </div>
   </header>
 </template>
