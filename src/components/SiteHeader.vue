@@ -49,7 +49,6 @@ export default {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-
   width: 100%;
   height: 80px;
   background-color: $main-color;

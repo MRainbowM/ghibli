@@ -62,7 +62,7 @@ export default {
 .films_grid_item {
     width: calc(100% / 4 - 20px);
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 
     @include max-screen($mixin-tablet-max-width) {

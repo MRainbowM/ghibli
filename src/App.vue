@@ -5,6 +5,7 @@
   <TotoroLogo />
   <FilmsGrid />
   <ReviewForm />
+  <SiteFooter />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import StudioFounders from '@/components/StudioFounders.vue'
 import TotoroLogo from '@/components/TotoroLogo.vue'
 import FilmsGrid from '@/components/FilmsGrid.vue'
 import ReviewForm from '@/components/ReviewForm.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
 
 export default {
   name: "App",
@@ -24,18 +26,12 @@ export default {
     StudioFounders,
     TotoroLogo,
     FilmsGrid,
-    ReviewForm
+    ReviewForm,
+    SiteFooter
   },
 };
 </script>
 
 <style>
-#app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50; */
-
-}
+#app {}
 </style>
