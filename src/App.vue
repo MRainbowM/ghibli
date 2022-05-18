@@ -4,6 +4,7 @@
   <StudioFounders />
   <TotoroLogo />
   <FilmsGrid />
+  <ReviewForm />
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import StudioGhibli from '@/components/StudioGhibli.vue'
 import StudioFounders from '@/components/StudioFounders.vue'
 import TotoroLogo from '@/components/TotoroLogo.vue'
 import FilmsGrid from '@/components/FilmsGrid.vue'
+import ReviewForm from '@/components/ReviewForm.vue'
 
 export default {
   name: "App",
@@ -21,7 +23,8 @@ export default {
     StudioGhibli,
     StudioFounders,
     TotoroLogo,
-    FilmsGrid
+    FilmsGrid,
+    ReviewForm
   },
 };
 </script>

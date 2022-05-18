@@ -14,7 +14,7 @@
       <a href="#founders" class="menu_item">основатели</a>
       <a href="#totoro" class="menu_item">тоторо</a>
       <a href="#films" class="menu_item">фильмы</a>
-      <a href="#films" class="menu_item">отзыв</a>
+      <a href="#review" class="menu_item">отзыв</a>
     </div>
   </header>
 </template>
