@@ -48,7 +48,7 @@ export default {
     }
 
     @include max-screen($mixin-phone-max-width) {
-        padding: 20px 20px 0 0;
+        padding: 50px 20px 0 0;
     }
 }
 
